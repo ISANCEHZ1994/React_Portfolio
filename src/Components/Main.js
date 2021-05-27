@@ -1,8 +1,7 @@
 import React from 'react';
 
 
-export default class Home extends React.Component{
-
+export default class Main extends React.Component{
     
 
     render(){
@@ -14,6 +13,8 @@ export default class Home extends React.Component{
                     Hello From the Home Component
                 </h1>
             </div>
+
         );
     };
+
 };
