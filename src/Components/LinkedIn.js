@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from './NavBar';
 
 
-export default class Main extends React.Component{
+export default class LinkedIn extends React.Component{
     
 
     render(){
@@ -10,12 +10,11 @@ export default class Main extends React.Component{
         return(
 
         <div>
+
             <NavBar/>
             <h1>
-                Hello From the Home Component
+                Hello From the LinkedIn Component
             </h1>
-
-            
 
         </div>
 
