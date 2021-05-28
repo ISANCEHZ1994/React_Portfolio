@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from './NavBar';
 
 
-export default class Main extends React.Component{
+export default class Home extends React.Component{
     
 
     render(){
@@ -14,9 +14,6 @@ export default class Main extends React.Component{
             <h1>
                 Hello From the Home Component
             </h1>
-
-            
-
         </div>
 
         );

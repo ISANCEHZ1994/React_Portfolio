@@ -2,14 +2,14 @@ const initialState = {
     open: false,
 }
 
-function navReducer( state = initialState, action){
+export function navReducer( state = initialState, action){
         switch(action.type){
             case "CHANGE_INFO":
             console.log('this is the action payload', action.payload)
 
             return{
                 ...state,
-                open: action.payload
+                open: !state.open
             }
             default: 
                 return state;

@@ -1,18 +1,18 @@
 
 
-export const transferSiteAsnc = (click) => {
+export const transferPage = () => {
     return {
         type: "CHANGE_INFO",
-        payload: click
+        // payload: click
     }
 };
 
-export const transfterSite = () => {
+// export const transfterSite = () => {
 
-    this.setState({
-        open: !this.state.open
-    })
+//     this.setState({
+//         open: !this.state.open
+//     })
 
-    dispatch 
+//     dispatch 
 
-}
+// }
