@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../NavBar';
+import NavBar from '../NavBar/NavBar';
 import './Home.css';
 import israel_pic from '../../Images/israel_profile_pic.jpg';
 import { motion } from 'framer-motion';

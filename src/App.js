@@ -1,21 +1,17 @@
 import './App.css';
-import Home from './Components/Home/Home';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import About from './Components/About';
-import LinkedIn from './Components/LinkedIn';
-import { motion } from "framer-motion";
+import About from './Components/About/About';
+import Home from './Components/Home/Home';
+import LinkedIn from './Components/LinkedIn/LinkedIn';
 
 function App() {
 
   return (
-    <motion.div   
-    // animate={{ scale: 1.2 }}
-    // transition={{ duration: 0.3 }}
-    >
+   
         <Router>
             <Switch>
                 <Route exact path="/" component={ Home }  />
@@ -24,7 +20,7 @@ function App() {
                 <Route path="/israel_certification" component={ LinkedIn } />
             </Switch>
         </Router>  
-    </motion.div>
+    
   );
 
 };
