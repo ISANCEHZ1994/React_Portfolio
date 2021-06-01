@@ -7,19 +7,32 @@ import LinkedIn from './LinkedIn';
 
 const NavBar = () => {
 
-    const click = useSelector( state => state.navWork );
-
+    // const click = useSelector( state => state.navWork );
+    // console.log(click, 'this is clicked!');
+    
     const history = useHistory();
 
-    console.log(click, 'this is clicked!');
+    const goHome = () => {
+        history.push('/israel_portfolio')
+    };
+
+    const goAbout = () => {
+        history.push('/israel_about_himself')
+    };
+
+    const goLinkedIn = () => {
+        history.push('/israel_certification')
+    };
     
     return(
+        
        <div>
-           <button>Home</button>
-           <button>About</button>
-           <button>LinkedIn</button>
-           <button> maybe something else </button>
+           <button onClick={() => goHome()}>Home</button>
+           <button onClick={() => goAbout()}>About</button>
+           <button onClick={() => goLinkedIn()}>LinkedIn</button>
+           <button > maybe something else </button>
        </div>
+
     );
 
 };
