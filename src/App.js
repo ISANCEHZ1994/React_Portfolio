@@ -1,10 +1,9 @@
 import './App.css';
-import Home from './Components/Home';
+import Home from './Components/Home/Home';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import About from './Components/About';
 import LinkedIn from './Components/LinkedIn';
@@ -13,8 +12,10 @@ import { motion } from "framer-motion";
 function App() {
 
   return (
-    <motion.div  animate={{ rotate: 360 }}
-    transition={{ duration: 2 }}>
+    <motion.div   
+    // animate={{ scale: 1.2 }}
+    // transition={{ duration: 0.3 }}
+    >
         <Router>
             <Switch>
                 <Route exact path="/" component={ Home }  />

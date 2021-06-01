@@ -1,36 +1,66 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
-import { useSelector } from 'react-redux';
-import Main from './Home';
-import About from './About';
-import LinkedIn from './LinkedIn';
+import { motion } from 'framer-motion';
 
 const NavBar = () => {
 
-    // const click = useSelector( state => state.navWork );
-    // console.log(click, 'this is clicked!');
-    
     const history = useHistory();
 
     const goHome = () => {
-        history.push('/israel_portfolio')
+        history.push('/israel_portfolio');
     };
 
     const goAbout = () => {
-        history.push('/israel_about_himself')
+        history.push('/israel_about_himself');
     };
 
     const goLinkedIn = () => {
-        history.push('/israel_certification')
+        history.push('/israel_certification');
     };
+
+    // const arrayButtons = [
+    //     {
+    //         name: "Home",
+    //         function: goHome,
+    //     },{
+    //         name: "About",
+    //         function: goAbout,
+    //     },{
+    //         name: "LinkedIn Certified",
+    //         function: goLinkedIn,
+    //     }
+    // ];
+    
+    // const createButtons = () => {
+    //     arrayButtons.map( (button) => {
+    //         return(
+    //         <motion.button
+    //        whileHover={{ scale: 1.3 }}
+    //        whileTap={{ scale: 0.9 }} 
+    //        onClick={() => button.function()}
+    //         >
+    //             {button.name}
+    //         </motion.button>
+    //         );
+    //     });
+    // };
     
     return(
         
        <div>
-           <button onClick={() => goHome()}>Home</button>
-           <button onClick={() => goAbout()}>About</button>
-           <button onClick={() => goLinkedIn()}>LinkedIn</button>
-           <button > maybe something else </button>
+           {/* { createButtons() } */}
+           <motion.button 
+           whileHover={{ scale: 1.3 }}
+           whileTap={{ scale: 0.9 }} 
+           onClick={() => goHome()}>Home</motion.button>
+           <motion.button
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.9 }} 
+            onClick={() => goAbout()}>About</motion.button>
+           <motion.button  
+           whileHover={{ scale: 1.3 }}
+           whileTap={{ scale: 0.9 }} 
+           onClick={() => goLinkedIn()}>LinkedIn</motion.button>
        </div>
 
     );
