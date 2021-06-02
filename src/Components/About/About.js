@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
+import './About.css';
 
 
 export default class About extends React.Component{
@@ -9,7 +10,7 @@ export default class About extends React.Component{
 
         return(
 
-        <div>
+        <div className="about">
             
             <NavBar/>
             <h1>
