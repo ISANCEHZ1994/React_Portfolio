@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
 import { motion } from 'framer-motion';
+import './NavBar.css';
 
 const NavBar = (props) => {
 
@@ -22,7 +23,6 @@ const NavBar = (props) => {
     };
 
     const createButtons = () => {
-
         const arrayButtons = [
             {
                 name: "Home",
@@ -35,10 +35,12 @@ const NavBar = (props) => {
                 function: goLinkedIn,
             }
         ];
-        // NOTE: it wasn't working before because we were not telling the function to return anything!
+        // NOTE: it wasn't working before because we were not 
+        // telling the function to return anything!
        return arrayButtons.map( button => 
            
             <motion.button
+            className="button"
            whileHover={{ scale: 1.3 }}
            whileTap={{ scale: 0.9 }} 
            onClick={() => button.function()}
@@ -52,23 +54,11 @@ const NavBar = (props) => {
     return(
         
        <div>
-          
-           { createButtons() }
-            {/* <div className="buttons">
-                <motion.button 
-                whileHover={{ scale: 1.3 }}
-                whileTap={{ scale: 0.9 }} 
-                onClick={() => goHome()}>Home</motion.button>
-                <motion.button
-                whileHover={{ scale: 1.3 }}
-                whileTap={{ scale: 0.9 }} 
-                onClick={() => goAbout()}>About</motion.button>
-                <motion.button  
-                whileHover={{ scale: 1.3 }}
-                whileTap={{ scale: 0.9 }} 
-                onClick={() => goLinkedIn()}>LinkedIn</motion.button>
-            </div> */}
-          
+            <div className="button_container">
+                 { createButtons() }
+            </div>
+               
+        
        </div>
 
     );

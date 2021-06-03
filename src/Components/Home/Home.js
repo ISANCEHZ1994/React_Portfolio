@@ -16,19 +16,20 @@ export default class Home extends React.Component{
         className="home"
         >
             <img src={israel_pic} alt="profile_photo" width="280px" height="350px"/>
-            <motion.div
-            initial="hidden" 
-            animate={{ scale: 1.5 }}
-            transition={{ duration: 0.5 }}
-            >
-                <h1> Israel Sanchez: <br></br> Full Stack Developer</h1>
-            </motion.div>
-            <motion.div
-             animate={{ scale: 1.5 }}
-             transition={{ duration: 0.5 }}
-            >
-                 <h4> A portfolio of Israel's projects, abilites and hobbies. </h4>
-            </motion.div>
+            
+                <motion.h1
+                initial={{ opacity: 1 }}
+                animate={{ scale: 1.5 }}
+                transition={{ duration: 0.5 }}
+                > Israel Sanchez: <br></br> Full Stack Developer</motion.h1>
+            
+          
+                 <motion.h4
+                 initial={{ opacity: 1 }}
+                  animate={{ scale: 1.5 }}
+                  transition={{ duration: 0.5 }}
+                 > A portfolio of Israel's projects, abilites and hobbies. </motion.h4>
+            
            
             <div className="surrounding_home">
                 <NavBar/>
