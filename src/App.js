@@ -7,6 +7,7 @@ import {
 import About from './Components/About/About';
 import Home from './Components/Home/Home';
 import LinkedIn from './Components/LinkedIn/LinkedIn';
+import Resume from './Components/Resume/Resume';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/israel_portfolio" component={ Home } />
                 <Route path="/israel_about_himself" component={ About } />
                 <Route path="/israel_certification" component={ LinkedIn } />
+                <Route path="/israel_resume" component={ Resume } />
             </Switch>
         </Router>  
     

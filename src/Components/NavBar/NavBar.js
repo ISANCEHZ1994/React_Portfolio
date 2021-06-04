@@ -1,6 +1,8 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
 import { motion } from 'framer-motion';
+import { IconContext } from 'react-icons';
+import { AiFillLinkedin as LinkedInIcon, AiFillGithub as GitHubIcon }  from 'react-icons/ai';
 import './NavBar.css';
 
 const NavBar = (props) => {
@@ -22,6 +24,11 @@ const NavBar = (props) => {
         console.log('we are at the LinkedIn page!')
     };
 
+    const goResume = () => {
+        history.push('/israel_resume')
+        console.log('we are at the Resume page!')
+    }
+
     const createButtons = () => {
         const arrayButtons = [
             {
@@ -35,7 +42,7 @@ const NavBar = (props) => {
                 function: goLinkedIn,
             },{
                 name: "Resume",
-                function: console.log('here should show resume')
+                function: goResume
             }
         ];
         // NOTE: it wasn't working before because we were not 
@@ -58,7 +65,17 @@ const NavBar = (props) => {
         
        <div className="navbar">
             <div className="button_container">
-                 { createButtons() }
+                { createButtons() }
+
+                <IconContext.Provider value={{ size: '2em', color: 'black'}} > {/* styles the icons! */}
+                    <a href="https://www.linkedin.com/in/israel-sanchez-94132020/" target="_blank">
+                        <LinkedInIcon/>
+                    </a>
+                    <a href="https://github.com/ISANCEHZ1994" target="_blank">
+                        <GitHubIcon/>
+                    </a>
+                </IconContext.Provider>
+                
             </div>
                
         
