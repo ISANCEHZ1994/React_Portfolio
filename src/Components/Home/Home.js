@@ -11,24 +11,22 @@ export default class Home extends React.Component{
 
         return(
 
-        <div
-        
-        className="home"
-        >
+        <div className="home">
             <img src={israel_pic} alt="profile_photo" width="280px" height="350px"/>
             
-                <motion.h1
+            <motion.h1
                 initial={{ opacity: 1 }}
                 animate={{ scale: 1.5 }}
                 transition={{ duration: 0.5 }}
-                > Israel Sanchez: <br></br> Full Stack Developer</motion.h1>
-            
+                className="title"
+            > Israel Sanchez: <br></br> Full Stack Developer</motion.h1>
+               
           
-                 <motion.h4
+            <motion.h4
                  initial={{ opacity: 1 }}
                   animate={{ scale: 1.5 }}
                   transition={{ duration: 0.5 }}
-                 > A portfolio of Israel's projects, abilites and hobbies. </motion.h4>
+            > A portfolio of my projects, abilites and hobbies.</motion.h4>
             
            
             <div className="surrounding_home">

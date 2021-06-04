@@ -33,6 +33,9 @@ const NavBar = (props) => {
             },{
                 name: "LinkedIn Certified",
                 function: goLinkedIn,
+            },{
+                name: "Resume",
+                function: console.log('here should show resume')
             }
         ];
         // NOTE: it wasn't working before because we were not 
@@ -53,7 +56,7 @@ const NavBar = (props) => {
     
     return(
         
-       <div>
+       <div className="navbar">
             <div className="button_container">
                  { createButtons() }
             </div>

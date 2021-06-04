@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
-
+import "./LinkedIn.css"
 
 export default class LinkedIn extends React.Component{
     
@@ -9,7 +9,7 @@ export default class LinkedIn extends React.Component{
 
         return(
 
-        <div>
+        <div className="linkedIn">
 
             <NavBar/>
             <h1>

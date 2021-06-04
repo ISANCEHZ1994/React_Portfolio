@@ -3,6 +3,10 @@
     /* padding: 150px 150px 150px 150px; */
 }
 
+.title{
+    padding-bottom: 10px;
+}
+
 .surrounding_home{
-    
+    background-color: darkcyan;
 }
