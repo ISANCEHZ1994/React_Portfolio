@@ -65,13 +65,13 @@ const NavBar = (props) => {
         
        <div className="navbar">
             <div className="button_container">
-                { createButtons() }
+                { createButtons() } {/* YES BUTTONS */}
 
                 <IconContext.Provider value={{ size: '2em', color: 'black'}} > {/* styles the icons! */}
-                    <a href="https://www.linkedin.com/in/israel-sanchez-94132020/" target="_blank">
+                    <a href="https://www.linkedin.com/in/israel-sanchez-94132020/" target="_blank" rel="noreferrer">
                         <LinkedInIcon/>
                     </a>
-                    <a href="https://github.com/ISANCEHZ1994" target="_blank">
+                    <a href="https://github.com/ISANCEHZ1994" target="_blank" rel="noreferrer">
                         <GitHubIcon/>
                     </a>
                 </IconContext.Provider>

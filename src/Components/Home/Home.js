@@ -2,7 +2,9 @@ import React from 'react';
 import NavBar from '../NavBar/NavBar';
 import './Home.css';
 import israel_pic from '../../Images/israel_profile_pic.jpg';
-// import { motion } from 'framer-motion';
+import YourSnap from '../../Images/YourSnap.png';
+import { motion } from 'framer-motion';
+
 
 export default class Home extends React.Component{
     
@@ -33,11 +35,21 @@ export default class Home extends React.Component{
                 
                 <NavBar/>
                 <h1>  Hello From the Home Component </h1>
+            <div>
+                <h1> Your Snap </h1>
+                <img src={YourSnap} alt="YourSnapProject" height="500" width=""></img>
+            </div>
+                <div>
+                    
+                </div>
+            <br></br>
 
-
+            <footer className='footer'>
+                Here I want contact Info and some more stuffs
+            </footer>
             </div> {/* end of surrounding_home className*/}
 
-        </div>
+        </div> //{/* end of home className*/}
 
         );
     };
