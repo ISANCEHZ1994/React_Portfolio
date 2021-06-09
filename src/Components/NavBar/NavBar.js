@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import { IconContext } from 'react-icons';
 import { AiFillLinkedin as LinkedInIcon, AiFillGithub as GitHubIcon }  from 'react-icons/ai';
 import './NavBar.css';
@@ -49,14 +49,14 @@ const NavBar = (props) => {
         // telling the function to return anything!
        return arrayButtons.map( button => 
            
-            <motion.button
-            className="button"
-           whileHover={{ scale: 1.3 }}
-           whileTap={{ scale: 0.9 }} 
+            <button
+           className="button"
+        //    whileHover={{ scale: 1.3 }}
+        //    whileTap={{ scale: 0.9 }} 
            onClick={() => button.function()}
             >
                 {button.name}
-            </motion.button>
+            </button>
             
         );
     };
@@ -67,7 +67,7 @@ const NavBar = (props) => {
             <div className="button_container">
                 { createButtons() } {/* YES BUTTONS */}
 
-                <IconContext.Provider value={{ size: '2em', color: 'black'}} > {/* styles the icons! */}
+                <IconContext.Provider value={{ size: '3em', color: 'black'}} > {/* styles the icons! */}
                     <a href="https://www.linkedin.com/in/israel-sanchez-94132020/" target="_blank" rel="noreferrer">
                         <LinkedInIcon/>
                     </a>
