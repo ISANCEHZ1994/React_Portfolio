@@ -66,7 +66,8 @@ const NavBar = (props) => {
        <div className="navbar">
             <div className="button_container">
                 { createButtons() } {/* YES BUTTONS */}
-
+            <div>
+                {/* <h4>Social Media: </h4> */}
                 <IconContext.Provider value={{ size: '3em', color: 'black'}} > {/* styles the icons! */}
                     <a href="https://www.linkedin.com/in/israel-sanchez-94132020/" target="_blank" rel="noreferrer">
                         <LinkedInIcon/>
@@ -75,6 +76,8 @@ const NavBar = (props) => {
                         <GitHubIcon/>
                     </a>
                 </IconContext.Provider>
+            </div>
+                
                 
             </div>
                

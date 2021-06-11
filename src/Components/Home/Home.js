@@ -13,9 +13,9 @@ export default class Home extends React.Component{
         return(
 
         <div className="home">
-            <a href="https://www.loom.com/share/e5c303f5a6754691bffc1fe275e29473" target="_blank" rel="noreferrer">
+        
                 <img src={israel_pic} alt="profile_photo" width="280px" height="350px" />
-            </a>
+           
             
             <h1 className="title"> Israel Sanchez: <br></br> Full Stack Developer</h1>
           
@@ -25,21 +25,25 @@ export default class Home extends React.Component{
             <div className="surrounding_home">
                 
                 <NavBar/>
-                <h1>  Hello From the Home Component </h1>
+                {/* <h1>  Hello From the Home Component </h1> */}
             <div className="your_snap">
                 <h1> Your Snap </h1>
-                <img src={YourSnap} alt="YourSnapProject" height="500" width=""></img>
+                <a  href="https://www.loom.com/share/e5c303f5a6754691bffc1fe275e29473" target="_blank" rel="noreferrer">
+                     <img className="image" src={YourSnap} alt="YourSnapProject" height="500" width=""></img>
+                </a>
+               
+                <p> Information about the appliaction above! </p>
             </div>
                
 
             <footer className='footer'>
-                Here I want contact Info and some more stuffs
-                <p>
-                    
-                </p>
-                <p>
-                    
-                </p>
+                <h1> Contact Information: </h1>
+                <h2>
+                    Email: <a href="mailto:Israel.pro1994@gmail.com"> Israel.pro1994@gmail.com </a>
+                </h2>
+                <h2>
+                    Phone: 
+                </h2>
             </footer>
             </div> {/* end of surrounding_home className*/}
 

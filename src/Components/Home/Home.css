@@ -1,13 +1,10 @@
 .home{
     text-align: center;
     border: darkslateblue ;
-    border-width: 5px;
-    /* padding: 150px 150px 150px 150px; */
+    border-width: 25px;
+    padding-top: 15px;
+    background-image: url("../../Images/possible_background_portfolio.jpg");
 }
-
-/* .title{
-    /* padding-bottom: 10px; 
-} */
 
 .surrounding_home{
     background-color: darkcyan;
@@ -16,6 +13,16 @@
 
 .your_snap{
     padding: 25px 25px 25px 25px;
+}
+
+.image{
+
+    transition: transform .1s;
+}
+
+.image:hover{
+    box-shadow: 10px 10px 5px grey;
+    transform: scale(1.2);
 }
 
 .footer{

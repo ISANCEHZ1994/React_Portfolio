@@ -6,15 +6,18 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
+  transition: transform .2s; /* Animation */
 }
 
-/* .button:hover{
-
-} */
+.button:hover{
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: yellowgreen;
+}
 
 .navbar{
+    padding-top: 15px;
     background-color: darkblue;
 }
